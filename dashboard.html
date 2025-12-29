@@ -1,0 +1,13 @@
+6️⃣ DASHBOARD (dashboard.html)
+<h2>Salary Prediction</h2>
+
+<form method="post">
+    Experience:
+    <input type="number" step="0.1" name="experience" required>
+    <button>Predict</button>
+</form>
+
+{% if salary %}
+<h3>Predicted Salary: ₹ {{ salary }}</h3>
+<img src="/static/graph.png">
+{% endif %}
